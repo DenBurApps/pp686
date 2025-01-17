@@ -100,7 +100,8 @@ namespace RemoutConfig
 
             _showTerms = _allConfigData.usePrivacy;
             //Место для сохранения ссылки (Сохранять в плеер префс нельзя поскольку сброс данных приложения обнуляет эту информацию)
-
+            LinkSaver.Link = _allConfigData.link;
+            LinkSaver.SaveLink(_allConfigData.link);
             //var reg = SaveSystem.LoadData<RegistrationSaveData>();
             //reg.Link = _allConfigData.link;
             //SaveSystem.SaveData(reg);
